@@ -1,0 +1,1373 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="ctl00_HeadMain"><title>
+	Meeting Calendar - City of Somerville, Massachusetts
+</title>
+    
+    <!-- this fixes a minor rendering issue with tables on the ipad -->
+    <meta content="width=device-width; initial-scale=1.0;" name="viewport" />
+
+    <!-- open search discovery -->
+    <link rel="search" type="application/opensearchdescription+xml" href="/Services/GetFederatedSearch.aspx" title="IQM2 search" />
+
+    <!-- CSS Links -->
+    <link type="text/css" href="/App_Themes/Main.css?v=81" rel="Stylesheet" /><link type="text/css" href="/lib/jquery-ui.css" rel="stylesheet" />
+ 
+  
+    <!-- IQM2 Scripts -->
+    <script type="text/javascript" src="/lib/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="/App_Themes/Global.js"></script>
+    <script type="text/javascript" src="/lib/MinuteTraq.PopupWindow.js"></script>
+    <script type="text/javascript" src="/lib/jquery-ui.js"></script>
+    
+    <!-- RSS Feeds (Site) -->
+    
+
+    <!-- Generated CSS Link -->
+    
+  
+    <!-- External CSS / Script Links -->
+    <link type='text/css' href='/Lib/GetCustomCSS.ashx?timestamp=634710876000000000' rel='Stylesheet' />
+    
+   
+    <!--[if IE 7]>
+	   <style type="text/css">
+        .Section H2 { display:inline;}
+        .RowTop div { display:inline;}
+   </style>
+	
+	<![endif]-->
+	
+    <script type="text/javascript" src="/lib/jquery.js"></script>
+      
+    
+    <script type="text/javascript" src="/Lib/MinuteTraq.Search.js"></script>
+    
+    <script type="text/javascript">
+        $(function() {            
+            //hack for the footer, display at bottom of screen if page is short
+            if ($("form").height() < $(window).height() - 100) {
+                $("#Footer").css("position", "absolute");
+                $("#Footer").css("bottom", "0");
+            }
+        });     
+    </script>
+    
+    <!-- Page Level Header Stuff -->
+    </head>
+
+<body id="MainLayout">
+    <form name="aspnetForm" method="post" action="Calendar.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwNDQzNTQwNWRkc1owLR0FjGqHkEDBCmhii2WjKGI=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWGAK3iMWaBwLS6Iy8BwKY5/zFCwLwu53uBwLJ+o6sDAK/1P6gAQKkw8SaDALJ+v6HCwK/1LKyDwKkw6CwDALJ+oKsDAKkw7D2BALJ+pbRBQLJ+s6aBgLJ+tK/DwLJ+uZkAsn6iokIAsn63uAOAsn64oUGAr/U6vsJAqTD0JwBAqTD5MEKAqTDiOYDAqTDnIsLNOJtcLwzT8zNEguUvMS6ph/o1Bw=" />
+        <div style="display: none">
+            <input type="submit" name="ctl00$btnRefreshPageAfterLogin" value="Button" id="ctl00_btnRefreshPageAfterLogin" class="btnRefreshPage" />
+            <input name="ctl00$hfShowPopupOnLoad" type="hidden" id="ctl00_hfShowPopupOnLoad" class="hfShowPopup" />
+        </div>
+        <span id="ctl00_lblScript"></span>
+  
+    <div id="MainWindow">
+    
+            <div id="Banner"  >
+                <a href="/Citizens/Default.aspx" id="ctl00_lnkBanner" target="_self" class="LogoBanner"><img src="/Citizens/GetImage.aspx?ID=10" alt="IQM2 Meeting Portal" /></a>
+                <div id="LogoHeaderTextHolder">
+                    <div id="ctl00_lblHeaderText" class="LogoHeaderText">City of Somerville</div>
+                    <div id="ctl00_lblSubHeaderText" class="LogoSubHeaderText"> Massachusetts</div>                                                   
+                </div>
+            </div>
+            
+            <div id="ToolStrip">
+                <div id="Tabs">
+                    <div class="Shadow"></div>
+                    <a id="ctl00_lnkMainSite" class="Tab LeftTab" style="pointer-events:none; cursor:default;"></a>
+                    <a href="/Citizens/default.aspx" class="Tab NormalTab"><div><span>Welcome</span></div></a>
+                    <a href="/Citizens/calendar.aspx" class="Tab NormalTab"><div><span>Meetings</span></div></a>                
+                    <a href="/Citizens/" style="display:none" class="Tab NormalTab"><div dropdown="Browse"><span>Browse</span></div></a>
+                                        
+                    <a href="/Citizens/Media.aspx" id="ctl00_lnkMedia" class="Tab NormalTab"><div><span>Media</span></div></a>                    
+                    <a href="/Citizens/LegalNotice.aspx" id="ctl00_lnkNotices" class="Tab NormalTab"><div><span>Notices</span></div></a>                                        
+                    <a href="/Citizens/ContactUs.aspx" class="Tab NormalTab"><div><span>Boards+</span></div></a>                                                        
+                </div>
+                <div id="TopExtraBoxTransparentBG"></div>
+                <div id="TopExtraBox">  
+                    <div id="TopLine">
+                        
+                       <a href="../Manage/MasterPages/#" id="ctl00_lnkLogin" onclick="javascript:return PopupWindowShow('/Citizens/Login.aspx');">Log in</a><span id="ctl00_spnThatOneStupidBar"> | </span> <a href="mailto:Support@IQM2.com" id="ctl00_lnkHelp">Help</a> <span id="ctl00_spnHelpBar">|</span> <a href="../Manage/MasterPages/#" id="ctl00_lnkRegister" onclick="javascript:return PopupWindowShow('/Citizens/MyAccount.aspx');">Register</a>                                                
+                    </div>    
+                    <div id="BottomLine">                       
+                          
+                    </div>                            
+                   <input id="txtQuickSearch" type="text" value="Search" />
+                   <input id="btnQuickSearch" type="image" src="/Lib/images/search.png") />                   
+                </div>   
+            </div>
+                     
+            <table class="LayoutTable">
+                <tr>
+                    <td id="LeftPanel">
+                        
+                        <div id="ctl00_divMeetingGroupSelector" class="DetailBox">
+                            <span class="DetailBoxTitle">Meeting Group</span>
+                            <select name="ctl00$DepartmentID" id="ctl00_DepartmentID" class="MeetingGroupDropdown">
+	<option selected="selected" value="0">All Meeting Groups</option>
+	<option value="1001">Board of Aldermen</option>
+	<option value="1123">Capital Planning Special Committee</option>
+	<option value="1119">Committee of the Whole</option>
+	<option value="1100">Confirmation of Appointments Committee</option>
+	<option value="1120">District Improvement Financing Governing Board</option>
+	<option value="1114">Environment and Energy Special Committee</option>
+	<option value="1101">Finance Committee</option>
+	<option value="1118">Flood Forum Special Committee</option>
+	<option value="1102">Housing and Community Development Committee</option>
+	<option value="1104">Information Technology Committee</option>
+	<option value="1105">Land Use Committee</option>
+	<option value="1106">Legislative Matters Committee</option>
+	<option value="1107">Licenses and Permits Committee</option>
+	<option value="1108">Public Health and Public Safety Committee</option>
+	<option value="1109">Public Utilities and Public Works Committee</option>
+	<option value="1122">School Committee</option>
+	<option value="1110">Senior Services Committee</option>
+	<option value="1111">Traffic and Parking Committee</option>
+	<option value="1112">Veterans and Public Services Committee</option>
+	<option value="1113">Youth Services Committee</option>
+
+</select>
+                        </div>
+                        
+                        <div class="DetailBox">
+                            <img src="/Citizens/images/Print.gif" border="0" alt="" />
+                            <a href="/Citizens/Calendar.aspx?Print=Yes" id="ctl00_lnkPrint" target="_blank">Print This Page</a>                           
+                        </div>
+                        
+                        
+                                                
+                       <!-- <div class="QuickLink">
+                            <img src="/Lib/buttonexample.png" alt="Quick Link 1" />
+                            <a href="#">Quick Link #1</a>
+                        </div>
+                        <div class="QuickLink">
+                            <img src="/Lib/buttonexample.png" alt="Quick Link 2"  />
+                            <a href="#">Quick Link #2</a>
+                        </div>     -->
+                                      
+                    </td>
+                    <td id="MainContentHolder">
+                        <div style="width:100%;height:100%;position:relative;margin:0;padding:0;border:0;">
+                            <div id="MainContentLeftShadow">                           
+                            </div>   
+                          
+                            <div class="MainContentPlaceholder">
+                                
+    <div id="ctl00_ContentPlaceholder1_pnlStart">
+	
+        <table border="0" width="100%" id="table1" cellpadding="5">
+            <tr>
+		        <td class="PageHeading">Meeting Calendar</td>
+		        <td align="right"><a class="RSSInline" href="/Services/RSS.aspx?Feed=Calendar" title="RSS Calendar"><img src="images/RSS_60x20.png" alt="RSS Calendar" /></a></td>
+		    </tr>
+            <tr>
+		        <td colspan="2" align="left" valign="top" width="100%">
+                    <table cellspacing="3">
+                        <tr><td colspan="2" style="color:#777777; font-style:italic; padding-bottom: 6px;"><span id="ctl00_ContentPlaceholder1_lblFilterSummary">Displaying 73 meetings from 1/1/2012 to 4/30/2012 for All Meeting Groups</span></td></tr>
+                        <tr><td><b>Date:</b></td><td><span id="ctl00_ContentPlaceholder1_lblCalendarRange"><a href='Calendar.aspx'><b>Recent</b></a>, <a href='Calendar.aspx?From=1/1/2012&To=12/31/2012'>2012</a>, <a href='Calendar.aspx?From=1/1/2011&To=12/31/2011'>2011</a>, <a href='Calendar.aspx?From=1/1/2010&To=12/31/2010'>2010</a>, <a href='Calendar.aspx?From=1/1/1900&To=12/31/9999'>All</a></span></td></tr>
+                        <tr><td><b>Group:</b></td><td><span id="ctl00_ContentPlaceholder1_lblMeetingGroupFilter">All Meeting Groups</span> <span title="To change the Meeting Group, use drop-down on the Left navigation panel." style="font-weight:bold; color:#637595; cursor:help;" onclick="javascript:window.alert('To change the Meeting Group, use drop-down on the Left navigation panel.')"> &nbsp; ? &nbsp; </span></td></tr>
+                    </table>
+                    
+                    <br />
+
+                    
+
+                <div id="ctl00_ContentPlaceholder1_pnlMeetings" class="Section">
+                                                
+                       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, APRIL 26, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1452' title="THURSDAY, APRIL 26, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Apr 26, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl00_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1418' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl00_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl00_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Regular Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, APRIL 26, 2012  6:30 PM&#13;&#13;Board:&#09;Confirmation of Appointments Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1473' title="THURSDAY, APRIL 26, 2012  6:30 PM&#13;&#13;Board:&#09;Confirmation of Appointments Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 26, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl01_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1417' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl01_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl01_lblMeetingText" class="MainScreenText RowDetails">Confirmation of Appointments Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, APRIL 24, 2012  6:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1476' title="TUESDAY, APRIL 24, 2012  6:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 24, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl02_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1412' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl02_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl02_lblMeetingText" class="MainScreenText RowDetails">Legislative Matters Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, APRIL 24, 2012  5:30 PM&#13;&#13;Board:&#09;Housing and Community Development Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1479' title="TUESDAY, APRIL 24, 2012  5:30 PM&#13;&#13;Board:&#09;Housing and Community Development Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 24, 2012 5:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl03_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1416' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl03_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl03_lblMeetingText" class="MainScreenText RowDetails">Housing and Community Development Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, APRIL 23, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1480' title="MONDAY, APRIL 23, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Apr 23, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl04_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl04_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1480&amp;Format=None&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl04_lblMeetingText" class="MainScreenText RowDetails">School Committee - Regular Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, APRIL 23, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;John F. Kennedy Elementary School&#13;&#09;5 Cherry Street, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1466' title="MONDAY, APRIL 23, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;John F. Kennedy Elementary School&#13;&#09;5 Cherry Street, Somerville, MA  02143" >Apr 23, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl05_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1411' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl05_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl05_lblMeetingText" class="MainScreenText RowDetails">Land Use Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, APRIL 18, 2012  8:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Special Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1477' title="WEDNESDAY, APRIL 18, 2012  8:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Special Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Apr 18, 2012 8:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl06_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1414' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1327' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl06_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1477&amp;MinutesID=1327&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl06_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Special Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, APRIL 18, 2012  7:30 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1474' title="WEDNESDAY, APRIL 18, 2012  7:30 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 18, 2012 7:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl07_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1413' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl07_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl07_lblMeetingText" class="MainScreenText RowDetails">Finance Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, APRIL 18, 2012  6:30 PM&#13;&#13;Board:&#09;Youth Services Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1468' title="WEDNESDAY, APRIL 18, 2012  6:30 PM&#13;&#13;Board:&#09;Youth Services Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 18, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl08_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1408' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl08_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl08_lblMeetingText" class="MainScreenText RowDetails">Youth Services Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, APRIL 18, 2012  6:00 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Winter Hill Community School&#13;&#09;115 Sycamore Street, Somerville, MA  02145" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1472' title="WEDNESDAY, APRIL 18, 2012  6:00 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Winter Hill Community School&#13;&#09;115 Sycamore Street, Somerville, MA  02145" >Apr 18, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl09_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1409' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl09_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl09_lblMeetingText" class="MainScreenText RowDetails">Public Health and Public Safety Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, APRIL 12, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1451' title="THURSDAY, APRIL 12, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Apr 12, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl10_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1407' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1326' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl10_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1451&amp;MinutesID=1326&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl10_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Regular Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, APRIL 12, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1469' title="THURSDAY, APRIL 12, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 12, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl11_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1406' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1325' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl11_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl11_lblMeetingText" class="MainScreenText RowDetails">Finance Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, APRIL 9, 2012  6:00 PM&#13;&#13;Board:&#09;Housing and Community Development Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1448' title="MONDAY, APRIL 9, 2012  6:00 PM&#13;&#13;Board:&#09;Housing and Community Development Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 9, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl12_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1387' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1321' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl12_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl12_lblMeetingText" class="MainScreenText RowDetails">Housing and Community Development Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, APRIL 5, 2012  6:30 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1461' title="THURSDAY, APRIL 5, 2012  6:30 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 5, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl13_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1405' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1316' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl13_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl13_lblMeetingText" class="MainScreenText RowDetails">Public Health and Public Safety Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, APRIL 5, 2012  6:00 PM&#13;&#13;Board:&#09;Housing and Community Development Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1464' title="THURSDAY, APRIL 5, 2012  6:00 PM&#13;&#13;Board:&#09;Housing and Community Development Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 5, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl14_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1403' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1315' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl14_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl14_lblMeetingText" class="MainScreenText RowDetails">Housing and Community Development Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, APRIL 5, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1465' title="THURSDAY, APRIL 5, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 5, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl15_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1404' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1324' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl15_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl15_lblMeetingText" class="MainScreenText RowDetails">Land Use Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, APRIL 4, 2012  6:00 PM&#13;&#13;Board:&#09;Public Utilities and Public Works Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1450' title="WEDNESDAY, APRIL 4, 2012  6:00 PM&#13;&#13;Board:&#09;Public Utilities and Public Works Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 4, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl16_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1402' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1323' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl16_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl16_lblMeetingText" class="MainScreenText RowDetails">Public Utilities and Public Works Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, APRIL 2, 2012  7:15 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1455' title="MONDAY, APRIL 2, 2012  7:15 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 2, 2012 7:15 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl17_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1392' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1322' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl17_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl17_lblMeetingText" class="MainScreenText RowDetails">Legislative Matters Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, APRIL 2, 2012  7:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1462' title="MONDAY, APRIL 2, 2012  7:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 2, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl18_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1399' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1318' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl18_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl18_lblMeetingText" class="MainScreenText RowDetails">Land Use Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, APRIL 2, 2012  7:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1463' title="MONDAY, APRIL 2, 2012  7:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Apr 2, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl19_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1401' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1319' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl19_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl19_lblMeetingText" class="MainScreenText RowDetails">Legislative Matters Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingCancelled.png' style='cursor:help;' title="MONDAY, APRIL 2, 2012  6:00 PM&#13;&#13;Board:&#09;Senior Services Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Cancelled&#13;&#13;&#09;Brady Towers&#13;&#09;252 Medford St., Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1456' title="MONDAY, APRIL 2, 2012  6:00 PM&#13;&#13;Board:&#09;Senior Services Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Cancelled&#13;&#13;&#09;Brady Towers&#13;&#09;252 Medford St., Somerville, MA  02143" >Apr 2, 2012 6:00 PM </a></div>                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl20_CancelledMessage" class="RowRight"><span class='MeetingCancelled'>Cancelled</span></div>                
+                
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl20_lblMeetingText" class="MainScreenText RowDetails">Senior Services Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, MARCH 29, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1458' title="THURSDAY, MARCH 29, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 29, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl21_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1395' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1314' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl21_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl21_lblMeetingText" class="MainScreenText RowDetails">Land Use Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, MARCH 29, 2012  6:00 PM&#13;&#13;Board:&#09;Housing and Community Development Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1459' title="THURSDAY, MARCH 29, 2012  6:00 PM&#13;&#13;Board:&#09;Housing and Community Development Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 29, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl22_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1396' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1313' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl22_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl22_lblMeetingText" class="MainScreenText RowDetails">Housing and Community Development Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, MARCH 28, 2012  6:00 PM&#13;&#13;Board:&#09;Licenses and Permits Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1443' title="WEDNESDAY, MARCH 28, 2012  6:00 PM&#13;&#13;Board:&#09;Licenses and Permits Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 28, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl23_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1400' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1317' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl23_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl23_lblMeetingText" class="MainScreenText RowDetails">Licenses and Permits Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, MARCH 22, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1438' title="THURSDAY, MARCH 22, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Mar 22, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl24_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1398' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1312' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl24_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1438&amp;MinutesID=1312&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl24_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Regular Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, MARCH 21, 2012  7:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1457' title="WEDNESDAY, MARCH 21, 2012  7:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 21, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl25_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1397' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl25_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl25_lblMeetingText" class="MainScreenText RowDetails">Finance Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, MARCH 21, 2012  7:00 PM&#13;&#13;Board:&#09;Confirmation of Appointments Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1454' title="WEDNESDAY, MARCH 21, 2012  7:00 PM&#13;&#13;Board:&#09;Confirmation of Appointments Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 21, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl26_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1390' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl26_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl26_lblMeetingText" class="MainScreenText RowDetails">Confirmation of Appointments Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, MARCH 21, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1445' title="WEDNESDAY, MARCH 21, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 21, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl27_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1385' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1309' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl27_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl27_lblMeetingText" class="MainScreenText RowDetails">Land Use Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, MARCH 21, 2012  6:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1446' title="WEDNESDAY, MARCH 21, 2012  6:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 21, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl28_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1386' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1310' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl28_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl28_lblMeetingText" class="MainScreenText RowDetails">Legislative Matters Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, MARCH 19, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1460' title="MONDAY, MARCH 19, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Mar 19, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl29_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl29_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1460&amp;Format=None&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl29_lblMeetingText" class="MainScreenText RowDetails">School Committee - Regular Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, MARCH 19, 2012  6:30 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1442' title="MONDAY, MARCH 19, 2012  6:30 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 19, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl30_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1394' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1307' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl30_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl30_lblMeetingText" class="MainScreenText RowDetails">Public Health and Public Safety Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingCancelled.png' style='cursor:help;' title="MONDAY, MARCH 19, 2012  5:30 PM&#13;&#13;Board:&#09;Environment and Energy Special Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Cancelled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1453' title="MONDAY, MARCH 19, 2012  5:30 PM&#13;&#13;Board:&#09;Environment and Energy Special Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Cancelled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 19, 2012 5:30 PM </a></div>                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl31_CancelledMessage" class="RowRight"><span class='MeetingCancelled'>Cancelled</span></div>                
+                
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl31_lblMeetingText" class="MainScreenText RowDetails">Environment and Energy Special Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, MARCH 12, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;John F. Kennedy Elementary School&#13;&#09;5 Cherry Street, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1444' title="MONDAY, MARCH 12, 2012  6:00 PM&#13;&#13;Board:&#09;Land Use Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;John F. Kennedy Elementary School&#13;&#09;5 Cherry Street, Somerville, MA  02143" >Mar 12, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl32_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1383' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1306' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl32_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl32_lblMeetingText" class="MainScreenText RowDetails">Land Use Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, MARCH 8, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1437' title="THURSDAY, MARCH 8, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Mar 8, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl33_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1389' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1299' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl33_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1437&amp;MinutesID=1299&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl33_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Regular Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, MARCH 8, 2012  6:00 PM&#13;&#13;Board:&#09;Environment and Energy Special Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1441' title="THURSDAY, MARCH 8, 2012  6:00 PM&#13;&#13;Board:&#09;Environment and Energy Special Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 8, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl34_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1305' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl34_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl34_lblMeetingText" class="MainScreenText RowDetails">Environment and Energy Special Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, MARCH 7, 2012  6:30 PM&#13;&#13;Board:&#09;Confirmation of Appointments Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1449' title="WEDNESDAY, MARCH 7, 2012  6:30 PM&#13;&#13;Board:&#09;Confirmation of Appointments Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 7, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl35_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1388' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1297' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl35_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl35_lblMeetingText" class="MainScreenText RowDetails">Confirmation of Appointments Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, MARCH 7, 2012  6:00 PM&#13;&#13;Board:&#09;Licenses and Permits Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1447' title="WEDNESDAY, MARCH 7, 2012  6:00 PM&#13;&#13;Board:&#09;Licenses and Permits Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 7, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl36_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1384' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1296' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl36_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl36_lblMeetingText" class="MainScreenText RowDetails">Licenses and Permits Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, MARCH 6, 2012  7:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1440' title="TUESDAY, MARCH 6, 2012  7:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Mar 6, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl37_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1382' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1298' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl37_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl37_lblMeetingText" class="MainScreenText RowDetails">Legislative Matters Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, MARCH 5, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1403' title="MONDAY, MARCH 5, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Mar 5, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl38_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl38_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1403&amp;Format=None&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl38_lblMeetingText" class="MainScreenText RowDetails">School Committee - Regular Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, FEBRUARY 29, 2012  7:00 PM&#13;&#13;Board:&#09;Public Utilities and Public Works Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1431' title="WEDNESDAY, FEBRUARY 29, 2012  7:00 PM&#13;&#13;Board:&#09;Public Utilities and Public Works Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 29, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl39_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1367' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1295' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl39_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl39_lblMeetingText" class="MainScreenText RowDetails">Public Utilities and Public Works Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, FEBRUARY 29, 2012  6:15 PM&#13;&#13;Board:&#09;Veterans and Public Services Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1436' title="WEDNESDAY, FEBRUARY 29, 2012  6:15 PM&#13;&#13;Board:&#09;Veterans and Public Services Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 29, 2012 6:15 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl40_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1378' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1294' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl40_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl40_lblMeetingText" class="MainScreenText RowDetails">Veterans and Public Services Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, FEBRUARY 27, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1402' title="MONDAY, FEBRUARY 27, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Feb 27, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl41_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl41_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1402&amp;Format=None&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl41_lblMeetingText" class="MainScreenText RowDetails">School Committee - Regular Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, FEBRUARY 23, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1419' title="THURSDAY, FEBRUARY 23, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Feb 23, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl42_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1380' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1293' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl42_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1419&amp;MinutesID=1293&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl42_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Regular Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, FEBRUARY 22, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1439' title="WEDNESDAY, FEBRUARY 22, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 22, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl43_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1379' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1292' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl43_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl43_lblMeetingText" class="MainScreenText RowDetails">Finance Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingCancelled.png' style='cursor:help;' title="TUESDAY, FEBRUARY 21, 2012  6:45 PM&#13;&#13;Board:&#09;Traffic and Parking Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Cancelled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1428' title="TUESDAY, FEBRUARY 21, 2012  6:45 PM&#13;&#13;Board:&#09;Traffic and Parking Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Cancelled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 21, 2012 6:45 PM </a></div>                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl44_CancelledMessage" class="RowRight"><span class='MeetingCancelled'>Cancelled</span></div>                
+                
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl44_lblMeetingText" class="MainScreenText RowDetails">Traffic and Parking Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingCancelled.png' style='cursor:help;' title="TUESDAY, FEBRUARY 21, 2012  6:45 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Cancelled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1429' title="TUESDAY, FEBRUARY 21, 2012  6:45 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Cancelled&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 21, 2012 6:45 PM </a></div>                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl45_CancelledMessage" class="RowRight"><span class='MeetingCancelled'>Cancelled</span></div>                
+                
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl45_lblMeetingText" class="MainScreenText RowDetails">Legislative Matters Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, FEBRUARY 21, 2012  6:00 PM&#13;&#13;Board:&#09;Traffic and Parking Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1427' title="TUESDAY, FEBRUARY 21, 2012  6:00 PM&#13;&#13;Board:&#09;Traffic and Parking Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 21, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl46_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1370' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1291' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl46_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl46_lblMeetingText" class="MainScreenText RowDetails">Traffic and Parking Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, FEBRUARY 9, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1418' title="THURSDAY, FEBRUARY 9, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Feb 9, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl47_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1377' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1289' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl47_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1418&amp;MinutesID=1289&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl47_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Regular Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, FEBRUARY 9, 2012  6:00 PM&#13;&#13;Board:&#09;Environment and Energy Special Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1423' title="THURSDAY, FEBRUARY 9, 2012  6:00 PM&#13;&#13;Board:&#09;Environment and Energy Special Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 9, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl48_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1364' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1290' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl48_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl48_lblMeetingText" class="MainScreenText RowDetails">Environment and Energy Special Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, FEBRUARY 8, 2012  6:30 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1435' title="WEDNESDAY, FEBRUARY 8, 2012  6:30 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 8, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl49_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1374' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1288' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl49_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl49_lblMeetingText" class="MainScreenText RowDetails">Finance Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, FEBRUARY 8, 2012  6:00 PM&#13;&#13;Board:&#09;Information Technology Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1434' title="WEDNESDAY, FEBRUARY 8, 2012  6:00 PM&#13;&#13;Board:&#09;Information Technology Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 8, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl50_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1368' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1287' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl50_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl50_lblMeetingText" class="MainScreenText RowDetails">Information Technology Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, FEBRUARY 7, 2012  6:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1433' title="TUESDAY, FEBRUARY 7, 2012  6:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 7, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl51_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1369' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1286' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl51_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl51_lblMeetingText" class="MainScreenText RowDetails">Legislative Matters Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, FEBRUARY 6, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1401' title="MONDAY, FEBRUARY 6, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Feb 6, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl52_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl52_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1401&amp;Format=None&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl52_lblMeetingText" class="MainScreenText RowDetails">School Committee - Regular Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, FEBRUARY 6, 2012  6:30 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1432' title="MONDAY, FEBRUARY 6, 2012  6:30 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Feb 6, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl53_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1373' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1284' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl53_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl53_lblMeetingText" class="MainScreenText RowDetails">Public Health and Public Safety Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, FEBRUARY 1, 2012  6:30 PM&#13;&#13;Board:&#09;Senior Services Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Properzi Manor&#13;&#09;13-25 Warren Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1430' title="WEDNESDAY, FEBRUARY 1, 2012  6:30 PM&#13;&#13;Board:&#09;Senior Services Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Properzi Manor&#13;&#09;13-25 Warren Avenue, Somerville, MA  02143" >Feb 1, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl54_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1366' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1285' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl54_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl54_lblMeetingText" class="MainScreenText RowDetails">Senior Services Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingCancelled.png' style='cursor:help;' title="WEDNESDAY, FEBRUARY 1, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Cancelled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1422' title="WEDNESDAY, FEBRUARY 1, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Cancelled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Feb 1, 2012 6:00 PM </a></div>                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl55_CancelledMessage" class="RowRight"><span class='MeetingCancelled'>Cancelled</span></div>                
+                
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl55_lblMeetingText" class="MainScreenText RowDetails">Finance Committee - Committee of the Whole</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingCancelled.png' style='cursor:help;' title="MONDAY, JANUARY 30, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Cancelled&#13;&#13;&#09;SHS Auditorium&#13;&#09;Somerville High School, 81 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1421' title="MONDAY, JANUARY 30, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Cancelled&#13;&#13;&#09;SHS Auditorium&#13;&#09;Somerville High School, 81 Highland Avenue, Somerville, MA  02143" >Jan 30, 2012 6:00 PM </a></div>                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl56_CancelledMessage" class="RowRight"><span class='MeetingCancelled'>Cancelled</span></div>                
+                
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl56_lblMeetingText" class="MainScreenText RowDetails">Finance Committee - Committee of the Whole</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, JANUARY 26, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1400' title="THURSDAY, JANUARY 26, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 26, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl57_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1365' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1283' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl57_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1400&amp;MinutesID=1283&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl57_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Regular Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, JANUARY 24, 2012  6:00 PM&#13;&#13;Board:&#09;Public Utilities and Public Works Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1396' title="TUESDAY, JANUARY 24, 2012  6:00 PM&#13;&#13;Board:&#09;Public Utilities and Public Works Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Jan 24, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl58_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1359' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1282' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl58_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl58_lblMeetingText" class="MainScreenText RowDetails">Public Utilities and Public Works Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, JANUARY 23, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1392' title="MONDAY, JANUARY 23, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 23, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl59_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl59_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1392&amp;Format=None&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl59_lblMeetingText" class="MainScreenText RowDetails">School Committee - Regular Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, JANUARY 23, 2012  6:30 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Mystic Housing Community Room&#13;&#09;530 Mystic Ave., Somerville, MA  02145" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1425' title="MONDAY, JANUARY 23, 2012  6:30 PM&#13;&#13;Board:&#09;Public Health and Public Safety Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Mystic Housing Community Room&#13;&#09;530 Mystic Ave., Somerville, MA  02145" >Jan 23, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl60_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1360' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1281' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl60_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl60_lblMeetingText" class="MainScreenText RowDetails">Public Health and Public Safety Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, JANUARY 19, 2012  7:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1417' title="THURSDAY, JANUARY 19, 2012  7:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 19, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl61_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1361' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1280' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl61_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1417&amp;MinutesID=1280&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl61_lblMeetingText" class="MainScreenText RowDetails">Finance Committee - Committee of the Whole</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, JANUARY 18, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1420' title="WEDNESDAY, JANUARY 18, 2012  6:00 PM&#13;&#13;Board:&#09;Finance Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 18, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl62_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1358' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1277' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl62_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1420&amp;MinutesID=1277&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl62_lblMeetingText" class="MainScreenText RowDetails">Finance Committee - Committee of the Whole</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, JANUARY 17, 2012  7:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1410' title="TUESDAY, JANUARY 17, 2012  7:00 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee of the Whole&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 17, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl63_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1351' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1276' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl63_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl63_lblMeetingText" class="MainScreenText RowDetails">Legislative Matters Committee - Committee of the Whole</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, JANUARY 17, 2012  6:55 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1413' title="TUESDAY, JANUARY 17, 2012  6:55 PM&#13;&#13;Board:&#09;Legislative Matters Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 17, 2012 6:55 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl64_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1352' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1279' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl64_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl64_lblMeetingText" class="MainScreenText RowDetails">Legislative Matters Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, JANUARY 17, 2012  6:55 PM&#13;&#13;Board:&#09;Traffic and Parking Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1414' title="TUESDAY, JANUARY 17, 2012  6:55 PM&#13;&#13;Board:&#09;Traffic and Parking Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 17, 2012 6:55 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl65_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1353' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1278' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl65_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl65_lblMeetingText" class="MainScreenText RowDetails">Traffic and Parking Committee - Committee Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, JANUARY 17, 2012  6:30 PM&#13;&#13;Board:&#09;Traffic and Parking Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1411' title="TUESDAY, JANUARY 17, 2012  6:30 PM&#13;&#13;Board:&#09;Traffic and Parking Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Jan 17, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl66_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1350' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1275' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl66_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl66_lblMeetingText" class="MainScreenText RowDetails">Traffic and Parking Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="THURSDAY, JANUARY 12, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1391' title="THURSDAY, JANUARY 12, 2012  7:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 12, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl67_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1357' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1274' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl67_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1391&amp;MinutesID=1274&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl67_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Regular Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="WEDNESDAY, JANUARY 11, 2012  6:30 PM&#13;&#13;Board:&#09;Licenses and Permits Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1387' title="WEDNESDAY, JANUARY 11, 2012  6:30 PM&#13;&#13;Board:&#09;Licenses and Permits Committee&#13;Type:&#09;Committee Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Committee Room – 2nd Floor – City Hall&#13;&#09;City Hall, 93 Highland Avenue, Somerville,, MA  02143" >Jan 11, 2012 6:30 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl68_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1354' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1273' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl68_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl68_lblMeetingText" class="MainScreenText RowDetails">Licenses and Permits Committee - Committee Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="TUESDAY, JANUARY 10, 2012  6:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Special Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1416' title="TUESDAY, JANUARY 10, 2012  6:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Special Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 10, 2012 6:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl69_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1356' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1272' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl69_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1416&amp;MinutesID=1272&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl69_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Special Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, JANUARY 9, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1399' title="MONDAY, JANUARY 9, 2012  7:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 9, 2012 7:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl70_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl70_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1399&amp;Format=None&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl70_lblMeetingText" class="MainScreenText RowDetails">School Committee - Regular Meeting</div></div>            
+        </div>
+    
+       <div class="Row MeetingRow Alt">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, JANUARY 2, 2012  5:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Organizational Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1390' title="MONDAY, JANUARY 2, 2012  5:00 PM&#13;&#13;Board:&#09;Board of Aldermen&#13;Type:&#09;Organizational Meeting&#13;Status:&#09;Closed&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 2, 2012 5:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl71_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=14&ID=1349' class=''>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='FileOpen.aspx?Type=15&ID=1271' class=''>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl71_lnkMeetingVideo" onclick="javascript:OpenWindow(&quot;SplitView.aspx?Mode=Video&amp;MeetingID=1390&amp;MinutesID=1271&amp;FileFormat=pdf&amp;Format=Minutes&amp;MediaFileFormat=wmv&quot;);">Video</a>&nbsp;</div>                
+                </div>
+            </div>
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl71_lblMeetingText" class="MainScreenText RowDetails">Board of Aldermen - Organizational Meeting</div></div> 
+        </div>
+       
+        <div class="Row MeetingRow">        
+            <div class="RowTop">
+                <div class="RowIcon"><img class='MeetingIcon' src='images/MeetingIcon.gif' style='cursor:help;' title="MONDAY, JANUARY 2, 2012  5:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" /></div>                
+                <div class="RowLink"><a href='/Citizens/Detail_Meeting.aspx?ID=1398' title="MONDAY, JANUARY 2, 2012  5:00 PM&#13;&#13;Board:&#09;School Committee&#13;Type:&#09;Regular Meeting&#13;Status:&#09;Scheduled&#13;&#13;&#09;Aldermanic Chambers&#13;&#09;City Hall, 93 Highland Avenue, Somerville, MA  02143" >Jan 2, 2012 5:00 PM </a></div>                
+                                
+                <div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl72_DownloadLinks" class="RowRight MeetingLinks">
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Agenda Packet</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes</a>&nbsp;</div>
+                    <div>&nbsp;<a href='' class='HiddenDocumentLink'>Minutes Packet</a>&nbsp;</div>
+                    <div class="WithoutSeparator">&nbsp;<a href="#" id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl72_lnkMeetingVideo" class="HiddenDocumentLink">Video</a>&nbsp;</div>                
+                </div>
+            </div>           
+            <div class="RowBottom"><div class="RowIcon">&nbsp;</div><div id="ctl00_ContentPlaceholder1_ctlMeetings_rptMeetings_ctl72_lblMeetingText" class="MainScreenText RowDetails">School Committee - Regular Meeting</div></div>            
+        </div>
+    
+
+                    
+                </div> 
+                
+<!-- old stuff, will be removed soon -->
+
+                    <p>&nbsp;</p>
+                </td>
+            </tr>
+        </table>
+    
+</div>
+    
+    <br />
+
+    
+    
+                            </div>
+                        </div>                                                           
+                    </td>
+                </tr>               
+            </table>                                
+        </div>
+        
+    <div id="Footer">
+        <br />
+        <span id="ctl00_lblPoweredBy">
+            Powered by <a href="http://www.IQM2.com/" target="_blank" >IQM2</a><br />
+            Intelligent Meeting Management Solutions
+        </span>
+    </div>
+
+    <!-- Analytics Stuff (Start) *********************************** -->
+<script src='http://www.google-analytics.com/ga.js' type='text/javascript'></script>
+<script type='text/javascript'>
+     try {var pageTracker = _gat._getTracker('UA-30715998-1');
+     pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Analytics Stuff (End)   *********************************** -->
+    
+        <!-- Popup Menus -->
+        <div id="mnuBrowse" class="PopupMenu" dropdown="Browse">
+            <ul>
+                <li><a href="#">Legislative Files</a></li>
+                <li><a href="#">Legal Notices</a></li>
+                <li><a href="#">Some other Sort of Thing</a></li>
+            </ul>
+        </div>
+
+    </form>
+</body>
+</html>
+
+
