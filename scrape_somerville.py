@@ -1,5 +1,8 @@
+import re
 import sys
 import os
+import subprocess
+import tempfile
 import urllib
 
 from collections import namedtuple
@@ -40,11 +43,42 @@ def parse_calendar(data):
 	return result
 
 def parse_description(description):
+    """ Parse the description of a meeting from the 'title' attribute.
+        Returns a MeetingRecord with the meeting info. """
     lines = description.splitlines()
     date = datetime.strptime(lines[0], '%A, %B %d, %Y %I:%M %p')
     board = lines[2].split(None, 1)[1]
     type_ = lines[3].split(None, 1)[1]
     return MeetingRecord(date, board, type_)
+    
+def get_minutes_as_text(url):
+    """ Download the minutes of a meeting and convert to text.
+        Returns the text of the file. 
+        Requires pdftotext for the conversion. """
+    s=scrapelib.Scraper()
+    data = s.urlopen(url)
+    fd, path = tempfile.mkstemp(text=True)
+    os.write(fd, data)
+    os.close(fd)
+    text = subprocess.check_output(['pdftotext', '-layout', '-nopgbrk', path, '-'])
+    os.remove(path)
+    return text
+    
+def find_attendance(data):
+    """ Find the attendance in the text of minutes.
+        Returns pairs of name, attendance for all listed attendees. """
+    result = []
+    lines = iter(data.splitlines())
+    for line in lines:
+        if 'Attendee Name' in line:
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    return result
+                fields = re.split('\s\s+', line)
+                result.append((fields[0], fields[2]))
+    return result
+    
     
 if __name__ == '__main__':
 	main()
