@@ -32,12 +32,10 @@ def main():
             
             desc = parse_description(raw_desc)
             print desc
-            print minutes_url
             minutes = get_minutes_as_text(sville_base + minutes_url)
             attendance = find_attendance(minutes)
             for who, what in attendance:
                 row = desc + (who, what)
-                print row
                 writer.writerow(row)
         
 
@@ -92,11 +90,21 @@ def find_attendance(data):
             for line in lines:
                 line = line.strip()
                 if not line:
-                    return result
+                    return result   # End of the attendance section
+                                    # assuming it doesn't span a page break...
                 fields = re.split('\s\s+', line)
-                result.append((fields[0], fields[2]))
+                result.append((fields[0], find_status(fields[1:])))
     return result
     
+def find_status(fields):
+    """ Find the attendance status in a list of fields.
+        We don't know which field it is, there may be one missing. """
+    statuses = ['Present', 'Absent', 'Excused']
+    for field in fields:
+        if field in statuses:
+            return field
+    print "Can't find status in", fields
+    return 'Unknown'
     
 if __name__ == '__main__':
     main()
