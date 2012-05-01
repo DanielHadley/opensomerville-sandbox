@@ -1,3 +1,4 @@
+import csv
 import re
 import sys
 import os
@@ -13,34 +14,51 @@ from lxml import etree
 
 MeetingRecord = namedtuple('MeetingRecord', 'date board type'.split())
 
-sville_main = 'http://somervillecityma.iqm2.com/Citizens/Calendar.aspx'
+sville_base = 'http://somervillecityma.iqm2.com/Citizens/'
+sville_main = sville_base + 'Calendar.aspx'
 
 def main():
-	s=scrapelib.Scraper()
-	#data = s.urlopen(sville_main)
-	data = open('Calendar.html').read()
-	rows = parse_calendar(data)
-	for row in rows:
-		print parse_description(row[0])
+    s=scrapelib.Scraper()
+    #data = s.urlopen(sville_main)
+    data = open('Calendar.html').read()
+    rows = parse_calendar(data)
+    with open('attendance.csv', 'wb') as out:
+        writer = csv.writer(out)
+        headers = 'date board type name status'.split()
+        writer.writerow(headers)
+        for raw_desc, minutes_url in rows:
+            if not minutes_url:
+                continue
+            
+            desc = parse_description(raw_desc)
+            print desc
+            print minutes_url
+            minutes = get_minutes_as_text(sville_base + minutes_url)
+            attendance = find_attendance(minutes)
+            for who, what in attendance:
+                row = desc + (who, what)
+                print row
+                writer.writerow(row)
+        
 
 def parse_calendar(data):
-	""" Parse a calendar page, return raw descriptions and links to minutes """
-	tree = etree.HTML(data)
-	
-	rows = tree.xpath("//div[@class='RowTop']")	
-	result = []
-	for row in rows:
-		anchors = row.xpath('.//a')
-		# First anchor has meeting info in the title attribute
-		description = anchors[0].attrib['title'].replace('\r', '\n')
-		
-		# Look for a link to minutes
-		minutes = None
-		for a in anchors:
-			if a.text == 'Minutes':
-				minutes = a.attrib['href']
-		result.append((description, minutes))
-	return result
+    """ Parse a calendar page, return raw descriptions and links to minutes """
+    tree = etree.HTML(data)
+    
+    rows = tree.xpath("//div[@class='RowTop']") 
+    result = []
+    for row in rows:
+        anchors = row.xpath('.//a')
+        # First anchor has meeting info in the title attribute
+        description = anchors[0].attrib['title'].replace('\r', '\n')
+        
+        # Look for a link to minutes
+        minutes = None
+        for a in anchors:
+            if a.text == 'Minutes':
+                minutes = a.attrib['href']
+        result.append((description, minutes))
+    return result
 
 def parse_description(description):
     """ Parse the description of a meeting from the 'title' attribute.
@@ -81,5 +99,5 @@ def find_attendance(data):
     
     
 if __name__ == '__main__':
-	main()
+    main()
 
