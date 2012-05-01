@@ -19,8 +19,8 @@ sville_main = sville_base + 'Calendar.aspx'
 
 def main():
     s=scrapelib.Scraper()
-    #data = s.urlopen(sville_main)
-    data = open('Calendar.html').read()
+    data = s.urlopen(sville_main)
+    #data = open('Calendar.html').read()
     rows = parse_calendar(data)
     with open('attendance.csv', 'wb') as out:
         writer = csv.writer(out)
@@ -99,7 +99,7 @@ def find_attendance(data):
 def find_status(fields):
     """ Find the attendance status in a list of fields.
         We don't know which field it is, there may be one missing. """
-    statuses = ['Present', 'Absent', 'Excused']
+    statuses = ['Present', 'Absent', 'Excused', 'Remote']
     for field in fields:
         if field in statuses:
             return field
