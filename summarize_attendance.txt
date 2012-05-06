@@ -1,0 +1,270 @@
+Board of Aldermen 
+                      status
+name                   Absent Present
+  Bruce M. Desmond          2       9
+  Dennis M. Sullivan        0      11
+  John M Connolly           0      11
+  Maryann M. Heuston        1      10
+  Rebekah Gewirtz           0      11
+  Robert C. Trane           1      10
+  Sean T. O'Donovan         2       9
+  Thomas F. Taylor          4       7
+  Tony Lafuente             4       7
+  William A. White Jr.      0      11
+  William M. Roche          1      10
+
+
+Confirmation of Appointments Committee 
+                   status
+name                Absent Excused Present
+  Bruce M. Desmond       0       0       2
+  Kevin Kelleher         0       0       1
+  Robert C. Trane        0       0       2
+  Robert Collins         0       0       1
+  Sarah Kloos            0       0       1
+  Sean T. O'Donovan      1       1       0
+  Tony Lafuente          0       0       2
+  William M. Roche       0       0       2
+
+
+Environment and Energy Special Committee 
+                    status
+name                 Absent Present
+  Alicia Berta            0       1
+  Bruce M. Desmond        0       1
+  David Lutes             0       2
+  John M Connolly         0       1
+  Maryann M. Heuston      2       0
+  Rebekah Gewirtz         0       2
+  Sean T. O'Donovan       1       1
+  Stan Koty               0       2
+  William M. Roche        0       1
+
+
+Finance Committee 
+                             status
+name                          Absent Present
+  Anne Thomas                      0       1
+  Arn Franzen                      0       1
+  Bruce M. Desmond                 2       3
+  David Shapiro                    0       1
+  David Webster                    0       1
+  Dennis M. Sullivan               0       2
+  Doug Willardson                  0       3
+  Ed Bean                          0       1
+  Eddie Nuzzo                      0       1
+  Frank Wright                     0       2
+  Ginger Barrett                   0       1
+  Gregory Jenkins                  0       1
+  Janice Delory                    0       1
+  John M Connolly                  0       6
+  Joseph Curtatone                 0       2
+  Marc Levye                       0       1
+  Mary Jo Rossetti                 0       1
+  Maryann M. Heuston               0       6
+  Matthew Dias                     0       1
+  Michael Cabral                   0       1
+  Michael Glavin                   0       2
+  Omar Boukili                     0       5
+  Paul Bockelman                   0       1
+  Paul Upton                       0       1
+  Paulette Renault-Caragianes      0       1
+  Peter Forcellese, Jr.            0       1
+  Rebekah L. Gewirtz               0       2
+  Robert C. Trane                  2       4
+  Robert King                      0       1
+  Sean T. O'Donovan                2       0
+  Stan Koty                        0       2
+  Thomas F. Taylor                 0       6
+  Thomas Pasquarello               0       1
+  Tony Lafuente                    0       2
+  Tony Pierantozzi                 0       1
+  William A. White Jr.             0       6
+  William M. Roche                 0       4
+
+
+Housing and Community Development Committee 
+                      status
+name                   Absent Present
+  Brad Rawson               0       1
+  Brad Ross                 0       1
+  Bruce M. Desmond          0       1
+  Dana LeWinter             0       3
+  Dennis M. Sullivan        1       3
+  George Proakis            0       3
+  Hayes Morrison            0       1
+  John M Connolly           0       2
+  Michael Glavin            0       2
+  Omar Boukili              0       3
+  Rebekah Gewirtz           3       1
+  Sean T. O'Donovan         0       2
+  Stan Koty                 0       2
+  Thomas F. Taylor          0       1
+  Tony Lafuente             0       4
+  William A. White Jr.      0       2
+
+
+Information Technology Committee 
+                      status
+name                   Absent Present
+  Bruce M. Desmond          0       1
+  Ed Bean                   0       1
+  John M Connolly           0       1
+  Karthik Viswanathan       0       1
+  Maryann M. Heuston        0       1
+  Michael Glavin            0       1
+  Omar Boukili              0       1
+  Rebekah Gewirtz           1       0
+  Thomas Champion           0       1
+  Thomas F. Taylor          0       1
+  William A. White Jr.      0       1
+  William M. Roche          0       1
+
+
+Land Use Committee 
+                      status
+name                   Absent Present
+  Adam Duchesneau           0       2
+  Brad Rawson               0       1
+  Brad Ross                 0       1
+  Bruce M. Desmond          0       2
+  Dana LeWinter             0       1
+  Dennis M. Sullivan        0       4
+  George Proakis            0       6
+  John M Connolly           0       4
+  Lori Massa                0       1
+  Maryann M. Heuston        0       2
+  Omar Boukili              0       1
+  Rebekah L. Gewirtz        0       4
+  Robert King               0       2
+  Sean T. O'Donovan         4       2
+  Thomas F. Taylor          0       1
+  Tony Lafuente             1       5
+  William A. White Jr.      0       6
+
+
+Legislative Matters Committee 
+                      status
+name                   Absent Present Remote
+  Brian Doherty             0       1      0
+  Bruce M. Desmond          4       4      0
+  Dan Sherman               0       1      0
+  Dave Shapiro              0       4      0
+  David Lutes               0       1      0
+  Dennis M. Sullivan        1       2      0
+  Doug Cress                0       1      0
+  Ed Bean                   0       1      0
+  Eddie Nuzzo               0       1      0
+  Frank Wright              0       2      0
+  George Proakis            0       2      0
+  John M Connolly           0       8      0
+  Lori Massa                0       1      0
+  Maryann M. Heuston        1       1      0
+  Michael Glavin            0       1      0
+  Omar Boukili              0       4      0
+  Rebekah Gewirtz           0       7      1
+  Robert C. Trane           1       0      0
+  Robert King               0       2      0
+  Sarah Kloos               0       1      0
+  Sean T. O'Donovan         1       0      0
+  Thomas F. Taylor          4       4      0
+  Tony Lafuente             0       2      0
+  William A. White Jr.      0       8      0
+  William M. Roche          0       1      0
+
+
+Licenses and Permits Committee 
+                    status
+name                 Absent Present
+  Dave Shapiro            0       1
+  Dennis M. Sullivan      0       3
+  Eddie Nuzzo             0       2
+  Maryann M. Heuston      1       2
+  Omar Boukili            0       1
+  Robert C. Trane         0       3
+  Tony Lafuente           0       1
+
+
+Public Health and Public Safety Committee 
+                             status
+name                          Absent Present
+  Bruce M. Desmond                 0       1
+  Dave Fallon                      0       1
+  Dennis M. Sullivan               0       2
+  Eddie Nuzzo                      0       4
+  Kevin Kelleher                   0       1
+  Michael Cabral                   0       2
+  Michael Glavin                   0       1
+  Omar Boukili                     0       4
+  Paulette Renault-Caragianes      0       1
+  Rebekah Gewirtz                  2       3
+  Sean T. O'Donovan                0       2
+  Thomas Pasquarello               0       3
+  Tony Lafuente                    0       4
+  William A. White Jr.             0       5
+  William M. Roche                 2       3
+
+
+Public Utilities and Public Works Committee 
+                    status
+name                 Absent Present
+  Bill Zamparelli         0       1
+  Bob Masci               0       1
+  Dana Terone             0       1
+  Dennis M. Sullivan      0       1
+  Douglas Foley           0       1
+  Frank Wright            0       1
+  John M Connolly         0       3
+  Mark Reed               0       2
+  Maryann M. Heuston      0       1
+  Omar Boukili            0       1
+  Robert C. Trane         1       2
+  Sean T. O'Donovan       0       3
+  Stan Koty               0       3
+  Stan Usovicz            0       2
+  Steve MacEachern        0       2
+
+
+Senior Services Committee 
+                      status
+name                   Present
+  Cindy Hickey               1
+  Dennis M. Sullivan         1
+  John M Connolly            1
+  Maryann M. Heuston         1
+  Robert C. Trane            1
+  Terry Smith                1
+  William A. White Jr.       1
+
+
+Traffic and Parking Committee 
+                    status
+name                 Absent Present
+  Dennis M. Sullivan      0       2
+  Matthew Dias            0       1
+  Omar Boukili            0       1
+  Robert C. Trane         0       3
+  Tony Lafuente           1       2
+  William M. Roche        0       3
+
+
+Veterans and Public Services Committee 
+                    status
+name                 Present
+  Dennis M. Sullivan       1
+  John M Connolly          1
+  John O'Leary             1
+  Omar Boukili             1
+  William M. Roche         1
+
+
+Youth Services Committee 
+                    status
+name                 Absent Present
+  Bruce M. Desmond        0       1
+  Corey Mashburn          0       1
+  Dan McLauglin           0       1
+  Dennis M. Sullivan      1       0
+  Jerry Morales           0       1
+  Maryann M. Heuston      0       1
+  Nancy Bacci             0       1

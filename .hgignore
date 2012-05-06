@@ -1,2 +1,8 @@
 syntax:glob
+.DS_Store
 *.pyc
+*.Rproj
+
+.Rhistory
+.Rproj.user/**
+Examples/**
