@@ -1,0 +1,494 @@
+Board of Aldermen 
+                      status
+name                   Absent Present
+  Bruce M. Desmond          1      27
+  Dennis M. Sullivan        0      28
+  John M Connolly           1      27
+  Maryann M. Heuston        1      27
+  Rebekah Gewirtz           1      24
+  Rebekah L. Gewirtz        0       3
+  Robert C. Trane           5      23
+  Sean T. O'Donovan         5      23
+  Thomas F. Taylor          9      19
+  Tony Lafuente             0       1
+  Walter F. Pero            3      24
+  William A. White Jr.      1      27
+  William M. Roche          2      26
+
+
+Confirmation of Appointments Committee 
+                      status
+name                   Absent Present
+  Bruce M. Desmond          1      11
+  Candace Cooper            0       2
+  Dana LeWinter             0       1
+  Dennis M. Sullivan        0       1
+  Frank Wright              0       1
+  John M Connolly           0       1
+  Kevin Kelleher            0       7
+  Matt Buckley              0       2
+  Michael Cabral            0       1
+  Omar Boukili              0       6
+  Patrick Sullivan III      0       2
+  Rebekah L. Gewirtz        0       1
+  Robert C. Trane           6       6
+  Robert Collins            0       5
+  Sarah Kloos               0       6
+  Thomas F. Taylor          6       6
+  Thomas Pasquarello        0       1
+  Walter F. Pero            4       8
+  William M. Roche          1      11
+
+
+District Improvement Financing Governing Board 
+                      status
+name                   Absent Excused Present
+  Anne Thomas               0       0       2
+  Bruce M. Desmond          0       0       3
+  Dennis M. Sullivan        0       0       3
+  Don Briggs                0       0       1
+  Ed Bean                   0       0       1
+  John M Connolly           0       0       3
+  Joseph Curtatone          0       0       3
+  Marc Levye                0       0       2
+  Maryann M. Heuston        0       0       3
+  Michael Glavin            0       0       1
+  Monica Lamboy             0       0       2
+  Omar Boukili              0       0       1
+  Rebekah Gewirtz           0       0       3
+  Robert C. Trane           1       1       1
+  Robert May                0       0       1
+  Sean T. O'Donovan         1       0       2
+  Stephen Azar              0       0       1
+  Steven Azar               0       0       1
+  Thomas F. Taylor          1       0       2
+  Walter F. Pero            1       0       2
+  William A. White Jr.      0       0       3
+  William M. Roche          0       0       3
+
+
+Finance Committee 
+                             status
+name                          Absent Present
+  Adam Duchesneau                  0       1
+  Adam Sweeting                    0       2
+  Angela Allen                     0       2
+  Anne Thomas                      0       6
+  Annne Thomas                     0       1
+  Arn Franzen                      0       2
+  Bill Carney                      0       1
+  Bill Swymer                      0       1
+  Bruce M. Desmond                 0      15
+  Candace Cooper                   0       1
+  Carl Sciortino                   0       1
+  Carleen Campbell                 0       1
+  Christine Rafal                  0       1
+  Chuck Allen                      0       1
+  Corey Mashburn                   0       1
+  Damon Luloff                     0       1
+  Dana LeWinter                    0       1
+  Dana Lewinter                    0       1
+  Daniel Federico                  0       2
+  Daren Costa                      0       1
+  Dave Shapiro                     0       3
+  David Howe                       0       1
+  David Lutes                      0       3
+  David Morrow                     0       1
+  David Salvi                      0       1
+  David Webster                    0       3
+  Dennis M. Sullivan               1      13
+  Don Briggs                       0       2
+  Donald Briggs                    0       1
+  Doug Willardson                  0      15
+  Ed Bean                          0      16
+  Eddie Nuzzo                      0       2
+  Elizabeth Craveiro               0       2
+  Ellen Schneider                  0       1
+  Frank Senesi                     0       2
+  Frank Wright                     0       7
+  George Proakis                   0       1
+  Ginger Barrett                   0       3
+  Gorge Scazelli                   0       1
+  Gregory Jenkins                  0       3
+  James Halloran                   0       5
+  Janice Delory                    0       2
+  Jason Grossfield                 0       1
+  Jessie Baker                     0       2
+  John Crooks                      0       1
+  John Long                        0       2
+  John M Connolly                  6      25
+  Joseph Curtatone                 0      11
+  Karthik Viswanathan              0       3
+  Kate Ashton                      0       2
+  Keith Craig                      0       1
+  Kevin Kelleher                   0       9
+  Leo Martini                      0       1
+  Lisa Doten                       0       1
+  M. Teresa Cardoso                0       2
+  Marc Levye                       0       6
+  Mark Niedergang                  0       2
+  Mary Jo Rossetti                 0       2
+  Maryann M. Heuston               0      31
+  Matt Buckley                     0       8
+  Matthew Dias                     0       5
+  Maureen Bastardi                 0       1
+  Michael Cabral                   0       5
+  Michael Glavin                   0       1
+  Michael Lambert                  0       4
+  Michael Meehan                   0       3
+  Monica Lamboy                    0       8
+  Nancy Milnor                     0       3
+  Nicholas Salerno                 0       1
+  Nicolas Salerno                  0       1
+  Omar Boukili                     0      21
+  Pat Haraden                      0       4
+  Patrick Sullivan III             0       3
+  Paul Bockleman                   0       1
+  Paul Bokelman                    0       1
+  Paul Upton                       0       3
+  Paulette Renault-Caragianes      0       2
+  Peter Forcellese, Jr.            0       1
+  Peter K Forcellese               0       1
+  Phillip Ercolini                 0       3
+  Rebekah Gewirtz                  5      24
+  Rebekah L. Gewirtz               1       1
+  Robert C. Trane                  3       5
+  Robert Collins                   0       4
+  Robert May                       0       4
+  Sarah Kloos                      0      10
+  Sean T. O'Donovan                2       9
+  Stan Koty                        0      11
+  Stephanie Hirsch                 0       3
+  Stephen Mackey                   0       2
+  Steve Azar                       0       3
+  Steve Craig                      0       1
+  Steve MacEachern                 0       2
+  Tara Acker                       0       1
+  Terry Smith                      0       1
+  Theresa Medeiros                 0       1
+  Thomas F. Taylor                12      19
+  Thomas Graney                    0       1
+  Thomas Pasquarello               0       9
+  Tom Bent                         0       1
+  Tony Ciccarelli                  0       1
+  Tony Pierantozzi                 0       4
+  Tricia Kelly                     0       1
+  Vincent McKay                    0       1
+  Walter F. Pero                   1       7
+  William A. White Jr.             5      26
+  William M. Roche                 0      12
+
+
+Housing and Community Development Committee 
+                    status
+name                 Absent Present
+  Brad Rawson             0       1
+  Bruce M. Desmond        0       1
+  Dana LeWinter           0       2
+  David Guzman            0       1
+  Dennis M. Sullivan      0       4
+  Eddie Nuzzo             0       1
+  Ellen Schneider         0       1
+  John Massie             0       1
+  Keith Craig             0       1
+  Maryann M. Heuston      0       1
+  Meridith Levy           0       1
+  Michael Glavin          0       1
+  Monica Lamboy           0       1
+  Omar Boukili            0       2
+  Rebekah Gewirtz         1       3
+  Robert C. Trane         0       1
+  Robert May              0       1
+  Sean T. O'Donovan       0       4
+  Stephen Houdlette       0       1
+  Stephen Mackey          0       1
+
+
+Information Technology Committee 
+                     status
+name                  Present
+  Bruce M. Desmond          1
+  Karthik Viswanathan       1
+  Omar Boukili              1
+  Rebekah Gewirtz           1
+  Robert C. Trane           1
+  William M. Roche          1
+
+
+Land Use Committee 
+                               status
+name                            Absent Present
+  Adam Dash                          0       1
+  Anne Thomas                        0       1
+  Bruce M. Desmond                   0       2
+  Dana LeWinter                      0       1
+  Dave Shapiro                       0       1
+  Dick Bauer                         0       1
+  Elizabeth Maroney                  0       1
+  Ellen Schneider                    0       1
+  George Proakis                     0       4
+  Herbert Foster                     0       1
+  Joe Favaloro                       0       1
+  John M Connolly                    0       2
+  Kevin Prior                        0       1
+  Mark Neidergang                    0       1
+  Maryann M. Heuston                 0       1
+  Members of the Planning Board      0       1
+  Michael Capuano                    0       1
+  Monica Lamboy                      0       2
+  Omar Boukili                       0       4
+  Robert King                        0       1
+  Sean T. O'Donovan                  3       2
+  Steve MacEachern                   0       1
+  Thomas Bent                        0       1
+  Thomas F. Taylor                   1       4
+  William A. White Jr.               0       5
+  William M. Roche                   0       1
+
+
+Legislative Matters Committee 
+                      status
+name                   Absent Present
+  Andrew Upton              0       1
+  Anne Thomas               0       2
+  Barbara Rubel             0       1
+  Brandon Wilson            0       3
+  Bruce M. Desmond          5      16
+  Corey Mashburn            0       3
+  Dave Shapiro              0       2
+  David Fallon              0       1
+  David Lutes               0       3
+  Dennis M. Sullivan        0       8
+  Dick Bauer                0       1
+  Ed Bean                   0       1
+  Eddie Nuzzo               0       4
+  Ellen Schneider           0       1
+  Frank Wright              0      10
+  George Proakis            0       3
+  J. J. Williams            0       1
+  Jason Grossfield          0       3
+  John M Connolly           2      19
+  Mark Stern                0       1
+  Maryann M. Heuston        1      10
+  Matt Buckley              0       6
+  Matthew Dias              0       2
+  Monica Lamboy             0       2
+  Nicolas Salerno           0       1
+  Omar Boukili              0      12
+  Paul Upton                0       1
+  Ray Zonghetti             0       2
+  Rebekah Gewirtz          10      10
+  Rebekah L. Gewirtz        0       1
+  Robert C. Trane           3       2
+  Robert King               0       1
+  Robert May                0       4
+  Sean T. O'Donovan         3       3
+  Stephen Mackey            0       3
+  Steve MacEachern          0       1
+  Steve Mackey              0       1
+  Thomas Bent               0       1
+  Thomas F. Taylor          8      13
+  Thomas Pasquarello        0       4
+  Tom Bent                  0       1
+  Ton Bent                  0       1
+  Tony Lafuente             0       1
+  Walter F. Pero            2       3
+  William A. White Jr.      4      17
+  William M. Roche          0       6
+
+
+Licenses and Permits Committee 
+                      status
+name                   Absent Present
+  Anne Vigorito, Esq.       0       1
+  Barbara Rubel             0       1
+  Bruce M. Desmond          0       2
+  Dana Andrus               0       1
+  Dave Shapiro              0       1
+  Dennis M. Sullivan        0      13
+  Eddie Nuzzo               0      11
+  Frank Wright              0       1
+  George Michael            0       1
+  Iriyank Patel             0       1
+  Jackie Duffy              0       1
+  John Long                 0       2
+  Joseph DePalo, Jr.        0       1
+  Joseph DePalo, Sr.        0       1
+  Leo Martini               0       4
+  Maryann M. Heuston        0      13
+  Omar Boukili              0       4
+  Rebekah L. Gewirtz        0       2
+  Robert C. Trane           7       6
+  Robert Masci              0       1
+  Stephen Mackey            0       1
+  Tom Flaherty              0       1
+  William A. White Jr.      0       2
+  William Zamparelli        0       1
+
+
+Parks and Open Space Special Committee 
+                      status
+name                   Absent Present
+  Adam Machson-Carter       0       1
+  Arn Franzen               0       1
+  Eoxhi Popa                0       1
+  George Proakis            0       1
+  John M Connolly           0       1
+  Kaylynn Florio            0       1
+  Maryann M. Heuston        0       2
+  Omar Boukili              0       2
+  Richard Jewers            0       1
+  Robert King               0       1
+  Steve MacEachern          0       1
+  Thomas F. Taylor          0       1
+  Walter F. Pero            1       1
+  William A. White Jr.      1       1
+
+
+Public Health and Public Safety Committee 
+                             status
+name                          Absent Present
+  Brian Arrigo                     0       1
+  Bruce M. Desmond                 0       4
+  Carol Antonelli                  0       1
+  Cathy Levin                      0       1
+  Corey Mashburn                   0       1
+  Dave Fallon                      0       1
+  Dave Shapiro                     0       6
+  David Fallon                     0       2
+  David Lutes                      0       1
+  Debra McLaughlin                 0       1
+  Dennis M. Sullivan               0       6
+  Dr. Daniel Fisher                0       1
+  Eddie Nuzzo                      0      11
+  Elizabeth Craveiro               0       1
+  Ellen Schneider                  0       3
+  Frank Wright                     0       3
+  George Proakis                   0       1
+  Jackyln Rossetti                 0       1
+  James Halloran                   0       1
+  Jason Grossfield                 0       1
+  John M Connolly                  3      12
+  Joseph Sater                     0       1
+  Kevin Kelleher                   0       6
+  M Teresa Cardoso                 0       1
+  Maryann M. Heuston               0       5
+  Michael Cabral                   0       1
+  Michael Glavin                   0       1
+  Monica Lamboy                    0       1
+  Nicholas Stiles                  0       1
+  Omar Boukili                     0      10
+  Patrick Sullivan III             0       3
+  Paul Mackey                      0       1
+  Paul Upton                       0       1
+  Paulette Renault-Caragianes      0       3
+  Rebekah L. Gewirtz               0       2
+  Robert C. Trane                  0       1
+  Robert Corrigan                  0       1
+  Robert King                      0       1
+  Sean T. O'Donovan                0       4
+  Sonia Durai                      0       1
+  Stan Koty                        0       4
+  Steve MacEachern                 0       2
+  Thomas Champion                  0       1
+  Thomas F. Taylor                 0       5
+  Thomas Pasquarello               0       6
+  Tim Toomey                       0       1
+  Timothy Toomey                   0       1
+  Walter F. Pero                   6       9
+  William A. White Jr.             0      15
+  William M. Roche                 0       6
+
+
+Public Utilities and Public Works Committee 
+                    status
+name                 Absent Present
+  Anne Thomas             0       1
+  Annemarie Walsh         0       1
+  Bruce M. Desmond        0       2
+  David Ross              0       1
+  Eddie Nuzzo             0       1
+  Greg Coughlin           0       1
+  John M Connolly         0       4
+  Mark Reid               0       1
+  Maryann M. Heuston      0       3
+  Matt Buckley            0       1
+  Monica Lamboy           0       1
+  Nancy Gaudet            0       1
+  Omar Boukili            0       2
+  Rick Willette           0       1
+  Robert C. Trane         4       0
+  Robert King             0       1
+  Robert Masci            0       2
+  Sean T. O'Donovan       0       4
+  Stan Koty               0       4
+  Thomas Pasquarello      0       1
+  William M. Roche        0       3
+  William Zamparelli      0       2
+
+
+Senior Services Committee 
+                      status
+name                   Absent Present
+  Bruce M. Desmond          0       1
+  Cindy Hickey              0       2
+  Connie Lorenti            0       1
+  Dennis M. Sullivan        0       4
+  Flo Papagano              0       1
+  John M Connolly           0       3
+  Robert C. Trane           0       1
+  Thomas F. Taylor          0       1
+  William A. White Jr.      1       3
+  William M. Roche          0       4
+
+
+Traffic and Parking Committee 
+                    status
+name                 Absent Present
+  Bruce M. Desmond        0       1
+  Dennis M. Sullivan      0       2
+  John M Connolly         0       1
+  Omar Boukili            0       1
+  Robert C. Trane         0       3
+  Sean T. O'Donovan       0       1
+  Thomas F. Taylor        0       1
+  Walter F. Pero          3       0
+  William M. Roche        0       3
+
+
+Veterans and Public Services Committee 
+                  status
+name               Present
+  Frank Senesi           1
+  John M Connolly        1
+  Omar Boukili           1
+  Walter F. Pero         1
+  William M. Roche       1
+
+
+Youth Services Committee 
+                        status
+name                     Absent Present
+  Beth Beaverson              0       1
+  Bruce M. Desmond            1       5
+  Corey Mashburn              0       3
+  Cory Mashburm               0       1
+  Dennis M. Sullivan          0       6
+  Emily Parrott               0       1
+  James Halloran              0       2
+  John M Connolly             1       5
+  Kelly Baker                 0       1
+  Mark Niedergang             0       1
+  Marlon Ramdehal             0       1
+  Nancy Bacci                 0       4
+  Omar Boukili                0       2
+  Peter Jehlen                0       1
+  Raffi Freedman-Gubspan      0       1
+  Rebekah L. Gewirtz          0       1
+  Robert C. Trane             0       1
+  Sarah Shugars               0       1
+  Sergio Estany               0       1
+  Stan Pollack                0       1
+  Thomas F. Taylor            0       1
+  William M. Roche            0       3
+  Willie Medeiros             0       1

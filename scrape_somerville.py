@@ -17,9 +17,9 @@ MeetingRecord = namedtuple('MeetingRecord', 'date board type'.split())
 sville_base = 'http://somervillecityma.iqm2.com/Citizens/'
 sville_main = sville_base + 'Calendar.aspx'
 
-def main():
+def main(url):
     s=scrapelib.Scraper()
-    data = s.urlopen(sville_main)
+    data = s.urlopen(url)
     #data = open('Calendar.html').read()
     rows = parse_calendar(data)
     with open('attendance.csv', 'wb') as out:
@@ -107,5 +107,9 @@ def find_status(fields):
     return 'Unknown'
     
 if __name__ == '__main__':
-    main()
+    if len(sys.argv) > 1:
+        url = sys.argv[1]
+    else:
+        url = sville_main
+    main(url)
 
