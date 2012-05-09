@@ -17,14 +17,16 @@ MeetingRecord = namedtuple('MeetingRecord', 'date board type'.split())
 sville_base = 'http://somervillecityma.iqm2.com/Citizens/'
 sville_main = sville_base + 'Calendar.aspx'
 
-def main(url):
+def parse_url(url):
     s=scrapelib.Scraper()
     data = s.urlopen(url)
-    #data = open('Calendar.html').read()
+    parse_data(data)
+
+def parse_data(data):
     rows = parse_calendar(data)
     with open('attendance.csv', 'wb') as out:
         writer = csv.writer(out)
-        headers = 'date board type name status'.split()
+        headers = 'date board type name title status'.split()
         writer.writerow(headers)
         for raw_desc, minutes_url in rows:
             if not minutes_url:
@@ -34,8 +36,8 @@ def main(url):
             print desc
             minutes = get_minutes_as_text(sville_base + minutes_url)
             attendance = find_attendance(minutes)
-            for who, what in attendance:
-                row = desc + (who, what)
+            for attend in attendance:
+                row = desc + attend
                 writer.writerow(row)
         
 
@@ -93,7 +95,11 @@ def find_attendance(data):
                     return result   # End of the attendance section
                                     # assuming it doesn't span a page break...
                 fields = re.split('\s\s+', line)
-                result.append((fields[0], find_status(fields[1:])))
+                if len(fields) == 3:
+                    result.append(fields)
+                else:
+                    result.append((fields[0], '', fields[1]))
+                #result.append((fields[0], find_status(fields[1:])))
     return result
     
 def find_status(fields):
@@ -109,7 +115,5 @@ def find_status(fields):
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         url = sys.argv[1]
-    else:
-        url = sville_main
-    main(url)
+        parse_url(url)
 
