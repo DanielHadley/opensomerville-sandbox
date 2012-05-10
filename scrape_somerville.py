@@ -85,21 +85,27 @@ def get_minutes_as_text(url):
 def find_attendance(data):
     """ Find the attendance in the text of minutes.
         Returns pairs of name, attendance for all listed attendees. """
+    valid_statuses = set(['Present', 'Absent', 'Excused', 'Remote'])
+    
     result = []
     lines = iter(data.splitlines())
     for line in lines:
         if 'Attendee Name' in line:
-            for line in lines:
-                line = line.strip()
-                if not line:
-                    return result   # End of the attendance section
-                                    # assuming it doesn't span a page break...
-                fields = re.split('\s\s+', line)
-                if len(fields) == 3:
-                    result.append(fields)
-                else:
-                    result.append((fields[0], '', fields[1]))
-                #result.append((fields[0], find_status(fields[1:])))
+            break
+            
+    for line in lines:
+        line = line.strip()
+        if not line:
+            break   # End of the attendance section
+                    # assuming it doesn't span a page break...
+        fields = re.split('\s\s+', line)
+        if len(fields) < 2 or fields[-1] not in valid_statuses:
+            break   # Bad data, assume that is the end
+            
+        if len(fields) == 3:
+            result.append(tuple(fields))
+        else:
+            result.append((fields[0], '', fields[1]))
     return result
     
 def find_status(fields):

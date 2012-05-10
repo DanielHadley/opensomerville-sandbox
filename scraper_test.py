@@ -31,6 +31,16 @@ Status:\tScheduled
     Dennis M. Sullivan            Alderman At Large                  Present
 '''
 
+    bad_attendance_text = '''   Attendee Name                           Title                         Status          Arrived
+       John M Connolly          Alderman At Large                         Present
+       Bruce M. Desmond         Alderman At Large                         Present
+       Robert C. Trane          Ward Seven Alderman                       Present
+    1.     #189575          Call of the Roll
+           Agenda Item
+                                  RESULT: Placed on File
+
+'''
+
     def setUp(self):
         pass
 
@@ -51,11 +61,15 @@ Status:\tScheduled
     def test_find_attendance(self):
         data = find_attendance(self.attendance_text)
         self.assertEquals(len(data), 7)
-        self.assertEquals(data[0], ['William A. White Jr.', 'Chair', 'Present'])
+        self.assertEquals(data[0], ('William A. White Jr.', 'Chair', 'Present'))
         self.assertEquals(data[2][2], 'Absent')
         self.assertEquals(data[3][2], 'Excused')
         self.assertEquals(data[4][2], 'Remote')
         self.assertEquals(data[5], ('Brad Ross', '', 'Present'))
+    
+    def test_find_attendance_bad(self):
+        data = find_attendance(self.bad_attendance_text)
+        self.assertEquals(len(data), 3)
         
 if __name__ == '__main__':
     unittest.main()
